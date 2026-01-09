@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Апонасенко Михаил Андреевич, группа В">
+    <meta name="description" content="VSCustom - ваш помощник в кастомизации редатора кода VS Code">
+    <title>VS Custom - кастомизация</title>
+        <link rel="icon" href="images/fav.png" sizes="16x16" type="image/png">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/custom.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <script defer src="js/main.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container header_container">
+                <button class="header-burger-btn" id="burger">
+                    <span></span><span></span><span></span>
+                </button>
+                <a href="index.html" class="logo">
+                    <img class="logo_img" src="images/logo.png" alt="логотип">
+                    <img class="logo_img_mobile" src="images/fav.png" alt="логотип мобильный">
+                </a>
+                <nav class="menu">
+                    <ul class="menu_list">
+                        <li class="menu_item">
+                            <a class="menu_link" href="index.html">Главная</a>
+                        </li>
+                        <li class="menu_item">
+                            <a class="menu_link" href="custom.html">Кастомизация</a>
+                        </li>
+                        <li class="menu_item">
+                            <a class="menu_link" href="feedback.html">Отзывы</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class="main">
+            <div class="custom_1">
+                <div class="container">
+                    <h1>И так, давайте начинать!</h1>
+                    <p class="h1_comment">Двигаться мы будем в следующем порядке:</p>
+                    <div class="navigation">
+                        <ul class="nav_list">
+                            <li class="nav_item">
+                                <a href="#conv" class="nav_link">
+                                    Добавляем удобство
+                                </a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#color" class="nav_link">
+                                    Цветовые схемы
+                                </a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#icons" class="nav_link">
+                                    Наводим красоту
+                                </a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#fonts" class="nav_link">
+                                    Шрифты/курсор
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="custom_default">
+                <div class="container">
+                    <h2 id="conv">Добавляем удобство:</h2>
+                    <p class="custom_p">Начнем с расширений, которые помогут упростить нам работу в редакторе кода.</p>
+                    <p class="custom_p">Перейдите во вкладку "расширения" (либо прожмите комбинацию клавиш "CTRL+SHIFT+X") и найдите в поисковой строке следующие плагины:</p>
+                    <div class="custom_content">
+                        <div class="custom_content_list">
+                            <ul class="custom_ul">
+                                <li class="custom_ul_text">
+                                    1. Russian Language Pack for Visual Studio Code - расширение для тех, кому хочется видеть интерфейс, на родном языке:
+                                    <img src="img/convenience/russian_mobile.jpg" alt="lang_mobile" class="custom_image_mobile">
+                                </li>
+                                <li class="custom_ul_text">
+                                    2. Auto Rename Tag - прекрасное расширение, упрощающее вам работу, меняет значения тега и в начале, и в конце:
+                                    <img src="img/convenience/tag.jpg" alt="renametag_mobile" class="custom_image_mobile">
+                                </li>
+                                <li class="custom_ul_text">
+                                    3. Live Server - очень полезное расширение, демонстрирует вам в браузере результат работы, например, ваш Front-End макет:
+                                    <img src="img/convenience/liveserver_mobile.jpg" alt="live_mobile" class="custom_image_mobile">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="custom_content_list">
+                            <ul class="custom_ul">
+                                <li class="custom_ul_img">
+                                    <img src="img/convenience/russian_desktop.jpg" alt="lang" class="custom_image_desktop">
+                                </li>
+                                <li class="custom_ul_img">
+                                    <img src="img/convenience/tag.jpg" alt="renametag" class="custom_image_desktop">
+                                </li>
+                                <li class="custom_ul_img">
+                                    <img src="img/convenience/liveserver_desktop.jpg" alt="live" class="custom_image_desktop">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="custom_1">
+                <div class="container">
+                    <h2 id="color">Цветовые схемы:</h2>
+                    <p class="custom_p">В этом блоке мы добавим цвет нашему редакотору кода, используя всего два расширения.</p>
+                    <p class="custom_p">И так, устанавливаем следующие плагины:</p>
+                    <div class="custom_content_2">
+                        <ul class="custom_ul_2">
+                            <li class="custom_text">
+                                1. Peacock - добавит нам цветовые схемы в интерфейс. Выбирайте, какой вам больше по душе:
+                                <img src="img/color/peacock_desktop.jpg" alt="peacock" class="custom_desktop">
+                                <img src="img/color/peacock_mobile.jpg" alt="peacock_mobile" class="custom_mobile">
+                            </li>
+                            <li class="custom_text">
+                                2. Bearded Theme - добавит в VS Code цветовую тему рабочего пространства.
+                                    Команда нашего сайта рекомендует использовать тему Monokai Metalian:
+                                <img src="img/color/bearded_desktop.jpg" alt="bearded" class="custom_desktop">
+                                <img src="img/color/bearded_mobile.jpg" alt="bearded_mobile" class="custom_mobile">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="custom_default">
+                <div class="container">
+                    <h2 id="icons">Наводим красоту:</h2>
+                    <p class="custom_p">С плагинами почти закончили, осталось еще два. Здесь мы поговорим о красивых иконках и цветных колонках.</p>
+                    <p class="custom_p">Устанавливаем следующие расширения:</p>
+                    <div class="custom_content_2">
+                        <ul class="custom_ul_2">
+                            <li class="custom_text">
+                                1. VSCode-Icons - добавляет в "ПРОВОДНИК" красивые иконки файлов и папок:
+                                <img src="img/icons/vsi_desktop.jpg" alt="vsicons" class="custom_desktop">
+                                <img src="img/icons/vsi_mobile.jpg" alt="vsicons_mobile" class="custom_mobile">
+                            </li>
+                            <li class="custom_text">
+                                2. Indent-Rainbow - окрашивает колонки в редакторе кода в разные цвета. Это и красиво, и добавляет нам удобство в пользовании кодом:
+                                <img src="img/icons/indrain_desktop.jpg" alt="rainbow" class="custom_desktop">
+                                <img src="img/icons/indrain_mobile.jpg" alt="rainbow_mobile" class="custom_mobile">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="custom_1">
+                <div class="container">
+                    <h2 id="fonts">Шрифты/Курсор:</h2>
+                    <p class="custom_p">Дело осталось за малым. Установим с вами шрифты и немного модифицируем курсор в редакоторе.</p>
+                    <p class="custom_p">Начнем со шрифтов. Вы можете установить себе любой шрифт с <a class="fonts" href="https://fonts.google.com/" target="_blank" rel="noopener noreferrer">Google Fonts</a>, но наша команда настоятельно рекомендует прекрасный шрифт от компании JetBrains - <a class="fonts jet" href="https://www.jetbrains.com/lp/mono/" target="_blank" rel="noopener noreferrer">JetBrains Mono</a>:</p>
+                    <div class="custom_content_2">
+                        <ul class="custom_ul_2">
+                            <li class="custom_text">
+                                1. Первым делом переходим на сайт компании JetBrains (ссылка сверху), нажимаем на кнопку "Download" и скачиваем архив со шрифтами. Дальше распаковываем и переходим в папку "ttf", выбираем нужный по толщине, кликаем два раза и устанавливаем:
+                                <img src="img/fonts/Jet_font.jpg" alt="vsicons" class="custom_desktop">
+                                <img src="img/fonts/Jet_font.jpg" alt="vsicons_mobile" class="custom_mobile">
+                            </li>
+                            <li class="custom_text">
+                                2. Далее переходим во вкладку "Управление", далее нажимаем на "параметры":
+                                <img src="img/fonts/Jet_settings.jpg" alt="rainbow" class="custom_desktop">
+                                <img src="img/fonts/Jet_settings.jpg" alt="rainbow_mobile" class="custom_mobile">
+                            </li>
+                            <li class="custom_text">
+                                3. Ищем "Текстовый редактор" в нем "Шрифт/Font", во вкладке "font-family" пишем "JetBrains Mono":
+                                <img src="img/fonts/Jet_family.jpg" alt="rainbow" class="custom_desktop">
+                                <img src="img/fonts/Jet_family.jpg" alt="rainbow_mobile" class="custom_mobile">
+                            </li>
+                        </ul>
+                    </div>
+                    <p class="custom_p">Теперь беремся за курсор.</p>
+                    <p class="custom_p">Нам понадобится всего две настройки:</p>
+                    <div class="custom_content_2">
+                        <ul class="custom_ul_2">
+                            <li class="custom_text">
+                                1. Во вкладке "Курсор" ищем настройку "Cursor Blinking", ставим "expand":
+                                <img src="img/fonts/blink.jpg" alt="vsicons" class="custom_desktop">
+                                <img src="img/fonts/blink.jpg" alt="vsicons_mobile" class="custom_mobile">
+                            </li>
+                            <li class="custom_text">
+                                2. Затем ищем настройку "Cursor Smooth Caret Animation" и ставим настройку "on":
+                                <img src="img/fonts/Jet_settings.jpg" alt="rainbow" class="custom_desktop">
+                                <img src="img/fonts/smooth.jpg" alt="rainbow_mobile" class="custom_mobile">
+                            </li>
+                        </ul>
+                    </div>
+                    <p class="custom_p_end">Поздравляем вас, дорогие чиатели, вы смогли кастомизировать VS Code. Мы очень надеемся, что эта статья была вам полезна и желаем удачи в ваших начинаниях.</p>
+                </div>
+            </div>
+            <button class="topBtn">
+                ↑
+            </button>
+        </main>
+        <footer class="footer">
+            <div class="container footer_container">
+                <p class="footer_p">&copy; 2025 - сайт создан вне целей коммерческого использования</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,242 @@
+:root {
+    --main-font: "Google Sans", sans-serif;
+    --example-font: "JetBrains Mono", monospace;
+    --h1-color: rgb(255, 255, 255);
+    --p-color: rgb(204, 204, 204);
+}
+
+/* общие стили */
+
+.custom_1 {
+    background: linear-gradient(135deg, rgba(159, 213, 254, 0.99), rgba(118, 170, 248, 0.87));
+    box-shadow: 0px 4px 21px -1px rgba(0,0,0,0.5);
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+    text-shadow: 0 5px 8px rgba(0,0,0, 0.4);
+}
+
+h2 {
+    padding: 20px 0;
+    font-size: 35px;
+    text-shadow: 0 5px 7px rgba(0,0,0, 0.4);
+}
+
+h3 {
+    padding: 0 0 20px 0;
+    font-size: 35px;
+    text-shadow: 0 5px 7px rgba(0,0,0, 0.4);
+}
+
+/* главная страница - навигация */
+
+.h1_comment {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: larger;
+}
+
+.nav_list {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav_item {
+    padding-bottom: 25px;
+}
+
+.nav_link {
+    display: block;
+    width: 220px;
+    padding: 10px 10px;
+    font-size: larger;
+    text-align: center;
+    background: linear-gradient(135deg, rgba(9, 13, 33, 0.97), rgba(21, 9, 70, 0.86));
+    box-shadow: 0 5px 7px rgba(0,0,0,0.5);
+    border-radius: 30px;
+}
+
+.nav_link:active {
+    background: linear-gradient(135deg, rgba(34, 46, 107, 0.97), rgba(32, 15, 99, 0.86));
+}
+
+
+/* главная страница - первый блок */
+
+.custom_p {
+    margin-bottom: 10px;
+    font-size: larger;
+    text-align: left;
+}
+
+.custom_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.custom_content_list {
+    display: flex;
+}
+
+.custom_ul {
+    list-style-type: none;
+    font-weight: bold;
+    font-size: larger;
+    padding-bottom: 30px;
+}
+
+.custom_ul_text {
+    padding: 41px 0;
+}
+
+.custom_ul_img {
+    padding: 5px 0;
+}
+
+.custom_image_desktop {
+    display: block;
+    border-radius: 1rem;
+    box-shadow: 0 4px 4px rgba(0,0,0, 0.6);
+}
+
+.custom_image_mobile {
+    display: none;
+}
+
+/* второй блок - цветовые темы */
+
+.custom_content_2 {
+    padding: 10px 0 30px 0;
+}
+
+.custom_ul_2 {
+    list-style-type: none;
+}
+
+.custom_text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.custom_desktop {
+    width: 40%;
+    display: block;
+    border-radius: 1rem;
+    box-shadow: 0 4px 4px rgba(0,0,0, 0.6);
+    margin: 10px 0 10px 20px;
+}
+
+.custom_mobile {
+    display: none;
+}
+
+
+/* третий блок - шрифты/курсор */
+
+.fonts {
+    color: rgb(154, 6, 36);
+}
+
+.jet {
+    font-family: var(--example-font);
+}
+
+.custom_p_end {
+    padding-bottom: 30px;
+    font-size: larger;
+    text-align: left;
+}
+
+
+/* медиа-запрос */
+
+@media (max-width: 768px) {
+    h1,h2, h3 {
+        font-size: 29px;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    .h1_comment {
+        font-size: medium;
+    }
+
+    .nav_list {
+        display: inline;
+        text-align: center;
+    }
+
+    .nav_item {
+        padding-bottom: 11px;
+    }
+
+    .nav_item:last-child {
+        padding-bottom: 30px;
+    }
+
+    .nav_link {
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .custom_p, .custom_p_end {
+        font-size: medium;
+        text-align: center;
+    }
+
+    .custom_content_list {
+        flex-wrap: wrap;
+    }
+
+    .custom_ul {
+        text-align: center;
+        font-size: medium;
+    }
+
+    .custom_ul_text {
+        padding: 0 0 10px 0;
+    }
+
+    .custom_image_desktop {
+        display: none;
+    }
+
+    .custom_image_mobile {
+        display: block;
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 12px;
+        box-shadow: 0 4px 5px rgba(0,0,0, 0.4);
+    }
+
+    .custom_text {
+        flex-wrap: wrap;
+        text-align: center;
+        font-size: medium;
+    }
+
+    .custom_desktop {
+        display: none;
+    }
+
+    .custom_mobile {
+        display: block;
+        margin: 10px auto;
+        border-radius: 12px;
+        box-shadow: 0 4px 5px rgba(0,0,0, 0.4);
+    }
+}

@@ -1,0 +1,234 @@
+/* псевдо-класс :root */
+:root {
+    --main-font: "Google Sans", sans-serif;
+    --example-font: "JetBrains Mono", monospace;
+    --h1-color: rgb(255, 255, 255);
+    --p-color: rgb(204, 204, 204);
+}
+
+/* сброс стилей */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+/* основные стили */
+html, body {
+    height: 100vh;
+    font-family: var(--main-font);
+}
+
+/* разметка grid */
+.wrapper {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+/* стилизация шапки сайта - flex */
+a {
+    color: white;
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    background: linear-gradient(135deg, rgba(9, 13, 33, 0.97), rgba(21, 9, 70, 0.86));
+    box-shadow: 0px 4px 21px -1px rgba(0,0,0,0.7);
+    z-index: 1000;
+}
+
+.header_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.header-burger-btn {
+    display: none;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: transparent;
+    z-index: 10;
+}
+
+.header-burger-btn span {
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background: white;
+    left: 5px;
+    transition: transform 0.4s, opacity 0.4s, background-color 0.4s;
+}
+
+.header-burger-btn span:nth-child(1) {
+    transform: translateY(-10px);
+}
+
+.header-burger-btn span:nth-child(3) {
+    transform: translateY(10px);
+}
+
+.header.open .header-burger-btn span {
+    background-color: white;
+}
+
+.header.open .header-burger-btn span:nth-child(1) {
+    transform: translateY(0) rotate(45deg);
+}
+
+.header.open .header-burger-btn span:nth-child(2) {
+    opacity: 0;
+}
+
+.header.open .header-burger-btn span:nth-child(3) {
+    transform: translateY(0) rotate(-45deg);
+}
+
+.logo {
+    display: block;
+}
+
+.logo_img {
+    width: 120px;
+}
+
+.logo_img_mobile {
+    display: none;
+}
+
+.menu_list {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu_item:not(:last-child) {
+    margin-right: 20px;
+}
+
+.menu_link {
+    font-size: 16px;
+}
+
+/* контентное пространство */
+
+.main {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.92), rgba(242, 242, 236, 0.85));
+}
+
+.topBtn {
+    all: initial;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, rgba(208, 243, 255, 0.9), rgba(116, 174, 246, 0.87));
+    border-radius: 50%;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.7);
+    position: fixed;
+    right: 1rem;
+    bottom: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.2s linear;
+}
+
+.topBtn:active {
+    background: linear-gradient(135deg, rgba(118, 209, 239, 0.9), rgba(54, 141, 248, 0.87));
+    color: white;
+}
+
+/* подвал сайта */
+
+.footer {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.92), rgba(14, 14, 18, 0.85));
+}
+
+.footer_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.footer_p {
+    text-align: center;
+    color: white;
+}
+
+
+@media (max-width: 768px) {
+    .header-burger-btn {
+        display: block;
+    }
+
+    .menu {
+        position: absolute;
+        left: -350px;
+        top: 0;
+        width: 349px;
+        height: 100vh;
+        background: linear-gradient(135deg, rgba(39, 31, 86, 1), rgba(29, 26, 51, 0.97));
+        padding: 75px 20px 20px 20px;
+        transition: transform 0.4s;
+    }
+
+    .menu_list {
+        display: block;
+    }
+
+    .menu_link {
+        color: rgb(255, 255, 255);
+        font-size: 21px;
+        display: block;
+        padding: 10px 0;
+    }
+
+    .header.open .menu {
+        transform: translateX(100%);
+    }
+
+    .logo_img {
+        display: none;
+    }
+
+    .logo_img_mobile {
+        display: block;
+        width: 60px;
+    }
+
+    .topBtn {
+        width: 43px;
+        height: 43px;
+        right: 0.4rem;
+        bottom: 4.5rem;
+    }
+}

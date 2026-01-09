@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Апонасенко Михаил Андреевич, группа В">
+    <meta name="description" content="VSCustom - ваш помощник в кастомизации редатора кода VS Code">
+    <title>VS Custom - главная</title>
+        <link rel="icon" href="images/fav.png" sizes="16x16" type="image/png">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/content.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <script defer src="js/main.js"></script>
+    <script defer src="js/slider.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container header_container">
+                <button class="header-burger-btn" id="burger">
+                    <span></span><span></span><span></span>
+                </button>
+                <a href="index.html" class="logo">
+                    <img class="logo_img" src="images/logo.png" alt="логотип">
+                    <img class="logo_img_mobile" src="images/fav.png" alt="логотип мобильный">
+                </a>
+                <nav class="menu">
+                    <ul class="menu_list">
+                        <li class="menu_item">
+                            <a class="menu_link" href="index.html">Главная</a>
+                        </li>
+                        <li class="menu_item">
+                            <a class="menu_link" href="custom.html">Кастомизация</a>
+                        </li>
+                        <li class="menu_item">
+                            <a class="menu_link" href="feedback.html">Отзывы</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class="main">
+            <div class="main_1">
+                <div class="container">
+                    <h1>Добро пожаловать в VS Custom, начинающие программисты</h1>
+                    <div class="main_container">
+                        <div class="main_1_items">
+                            <ul class="main_ul">
+                                <li>Наша команда рада вас приветствовать на нашем сайте, посвященном кастомизации редактора кода - VS Code.</li>
+                                <li>Надеемся статья с данного сайта поможет вам сделать ваш редактор более приятным в использовании.</li>
+                                <li>А добиваться результата мы будем путем изменения внешнего вида - кастомизации. Наша команда подготовила для вас набор расширений и команд, которыми можно преобразить ваш VS Code до неузнаваемости.</li>
+                            </ul>
+                        </div>
+                        <div class="main_1_items">
+                            <img class="main_1_image" src="images/programmers.jpg" alt="программисты">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main_2">
+                <div class="container">
+                    <h2>Как будет выглядить ваш редактор кода</h2>
+                    <p>Все, конечно же, зависит от вас, дорогие читатели, но мы вам покажем примерный вид VS Code.</p>
+                    <div class="slider">
+                        <div class="slider_container">
+                            <div class="image_container">
+                                <img src="images/before.jpg" alt="до" class="image-before slider-image">
+                                <img src="images/after.jpg" alt="после" class="image-after slider-image">
+                            </div>
+                            <input type="range" min="0" max="100" value="50" step="0.1" class="slider_range">
+                            <div class="slider-line"></div>
+                            <div class="slider-button" aria-hidden="true">
+                                <svg id="Flat" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" viewBox="0 0 256 256">
+                                <path d="M136,40V216a8,8,0,0,1-16,0V40a8,8,0,0,1,16,0ZM96,120H35.314l18.34327-18.34277A8.00053,8.00053,0,0,0,42.34277,90.34277l-32,32c-.05664.0564-.10449.11792-.15869.17554-.12549.13281-.251.26538-.36719.40649-.0913.11084-.17138.22706-.25537.34156-.07031.0957-.14453.188-.21093.28686-.085.12647-.15918.25782-.23584.38819-.05567.09423-.11524.186-.167.283-.06933.12915-.12841.262-.18994.39379-.04931.10547-.102.20874-.147.31665-.05225.12647-.09522.25562-.14063.38428-.042.11817-.0874.23462-.124.35523-.03906.1289-.06787.25976-.10058.39013-.03077.12305-.06543.24414-.09034.36939-.02978.15137-.04834.30444-.06933.457-.01465.106-.03516.21-.0459.31714a8.02276,8.02276,0,0,0,0,1.584c.01074.10718.03125.21118.0459.31714.021.15259.03955.30566.06933.457.02491.12525.05957.24634.09034.36939.03271.13037.06152.26123.10058.39013.03662.12061.082.23706.124.35523.04541.12866.08838.25781.14063.38428.04492.10791.09766.21118.147.31665.06153.13183.12061.26464.18994.39379.05176.09693.11133.18873.167.283.07666.13037.15087.26172.23584.38819.0664.09887.14062.19116.21093.28686.084.1145.16407.23072.25537.34156.11622.14111.2417.27368.36719.40649.0542.05762.10205.11914.15869.17554l32,32a8.00053,8.00053,0,0,0,11.31446-11.31446L35.314,136H96a8,8,0,0,0,0-16Zm150.18311,13.0752c.0913-.11084.17138-.22706.25537-.34156.07031-.0957.14453-.188.21093-.28686.085-.12647.15918-.25782.23584-.38819.05567-.09423.11524-.186.167-.283.06933-.12915.12841-.262.18994-.39379.04931-.10547.10205-.20874.147-.31665.05225-.12647.09522-.25562.14063-.38428.042-.11817.0874-.23462.124-.35523.03906-.1289.06787-.25976.10058-.39013.03077-.12305.06543-.24414.09034-.36939.02978-.15137.04834-.30444.06933-.457.01465-.106.03516-.21.0459-.31714a8.02276,8.02276,0,0,0,0-1.584c-.01074-.10718-.03125-.21118-.0459-.31714-.021-.15259-.03955-.30566-.06933-.457-.02491-.12525-.05957-.24634-.09034-.36939-.03271-.13037-.06152-.26123-.10058-.39013-.03662-.12061-.082-.23706-.124-.35523-.04541-.12866-.08838-.25781-.14063-.38428-.04492-.10791-.09766-.21118-.147-.31665-.06153-.13183-.12061-.26464-.18994-.39379-.05176-.09693-.11133-.18873-.167-.283-.07666-.13037-.15087-.26172-.23584-.38819-.0664-.09887-.14062-.19116-.21093-.28686-.084-.1145-.16407-.23072-.25537-.34156-.11622-.14111-.2417-.27368-.36719-.40649-.0542-.05762-.10205-.11914-.15869-.17554l-32-32a8.00053,8.00053,0,0,0-11.31446,11.31446L220.686,120H160a8,8,0,0,0,0,16h60.686l-18.34327,18.34277a8.00053,8.00053,0,0,0,11.31446,11.31446l32-32c.05664-.0564.10449-.11792.15869-.17554C245.94141,133.34888,246.06689,133.21631,246.18311,133.0752Z"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main_3">
+                <div class="container">
+                    <h2 class="h2_main_3">Хотите также?</h2>
+                    <div class="main_3_container">
+                        <div class="main_3_items">
+                            <img src="images/satisfied_programmer.png" alt="довольный_программист" class="main_3_image" loading="lazy">
+                        </div>
+                        <div class="main_3_items">
+                            <ul class="main_3_ul">
+                                <li>
+                                    <span class="h2_main_3_desctop">Хотите также?</span>
+                                </li>
+                                <li>В таком случае просим перейти вас во вкладку "Кастомизация"</li>
+                                <li>Там вас ждет подробное пошаговое руководство</li>
+                                <li>Или же переходите по ссылке ниже:</li>
+                                <li>
+                                    <a href="custom.html" class="main_3_btn">Кастомизация</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="topBtn">
+                ↑
+            </button>
+        </main>
+        <footer class="footer">
+            <div class="container footer_container">
+                <p class="footer_p">&copy; 2025 - сайт создан вне целей коммерческого использования</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
